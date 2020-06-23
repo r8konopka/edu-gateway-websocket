@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/discovery-service/discovery-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/first-service/first-service.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/first-service/first-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/notification-service/notification-service.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/notification-service/notification-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-gateway/second-service/second-service.iml" filepath="$PROJECT_DIR$/spring-cloud-gateway/second-service/second-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud-gateway-websocket.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud-gateway-websocket.iml" />
+    </modules>
+  </component>
+</project>

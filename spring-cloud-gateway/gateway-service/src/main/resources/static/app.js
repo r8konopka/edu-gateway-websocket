@@ -12,7 +12,8 @@ function setConnected(connected) {
 
 function connect() {
 	//connect to stomp where stomp endpoint is exposed
-	var socket = new WebSocket("ws://localhost:8080/websocket/greeting");
+	var service = $("#service").val();
+	var socket = new WebSocket("ws://localhost:8080/"+service+"/websocket/message");
 	ws = Stomp.over(socket);
 
 	ws.connect({}, function(frame) {

@@ -22,10 +22,15 @@ public class BeanConfig {
                         .uri("lb://FIRST-SERVICE/")
                         .id("first-service"))
 
-                .route(r -> r.path("/websocket/**")
-                        .filters(f -> f.rewritePath("/websocket/(?<remains>.*)", "/${remains}"))
-                        .uri("lb://NOTIFICATION-SERVICE/")
-                        .id("notification-service"))
+                .route(r -> r.path("/first/websocket/**")
+                        .filters(f -> f.rewritePath("/first/websocket/(?<remains>.*)", "/${remains}"))
+                        .uri("lb://FIRST-SERVICE/")
+                        .id("first-service"))
+
+                .route(r -> r.path("/second/websocket/**")
+                        .filters(f -> f.rewritePath("/second/websocket/(?<remains>.*)", "/${remains}"))
+                        .uri("lb://SECOND-SERVICE/")
+                        .id("second-service"))
 
                 .route(r -> r.path("/api/v1/second/**")
                         .filters(f -> f.rewritePath("/api/v1/second/(?<remains>.*)", "/${remains}")
